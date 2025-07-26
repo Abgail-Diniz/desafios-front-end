@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    p{
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    .banner{
+        background-image: none;
+        padding-top: 1.5rem;
+        border-bottom: 0.1875rem solid #33A8DB80
+    }
+    .banner-content{
+        width: 25rem;
+        margin: auto;
+    }
+    .banner-content .logo {
+        background-color: rgba(51, 169, 216, 0.067);
+    }
+    .banner-content h1{
+        font-size: 1.75rem;
+        margin-top: 50px;
+    }
+    .banner-content p {
+        font-size: 1rem;
+        line-height: 1.2;
+        width: 18.75rem;
+        margin: 1.875rem auto;
+    }
+    #course-content{
+        max-width: 25rem;   
+    }
+    #course-content p{
+        max-width: 15rem;
+        margin: 0 auto;   
+    }
+    .modules-list .module{
+        width: 15rem;
+    }
+    #transform-world{
+        padding: 4rem;
+        background-image: url(../images/woman-code-mobile.png);
+        background-position: bottom center;
+    }
+    #professional-challenges{
+        width: 20rem;
+    }
+    #professional-challenges img{
+        width: 15rem;
+    }
+    footer{
+        padding: 3.75rem 2rem;
+    }
+    footer p{
+        text-align: center;
+    }
+}

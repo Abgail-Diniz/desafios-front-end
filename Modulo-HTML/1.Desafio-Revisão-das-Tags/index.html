@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeiros Passos com HTML</title>
+    </head>
+    <body>
+        <!-- &nbsp; - Da espaço na linha -->
+        <!-- &lt; = < (abrindo a tag, para visualização) -->
+        <!-- &gt; = > (Fechando a tag, para visualização)-->
+        <h1 id="inicio">Primeiros Passos com HTML</h1>
+        <hr>
+
+        <h2>Índice</h2>
+        <nav>        
+            <ul>
+                <li>
+                    <a href="#apresentando-tags"> Apresentando Tags Básicas do HTML</a>
+                    <ol>
+                        <li>
+                            <a href="#titulos">Títulos (h1 a h6)</a>
+                        </li>
+                        <li>
+                            <a href="#paragrafos">Parágrafos com p</a>
+                        </li>
+                        <li>
+                            <a href="#citacoes">Citações com blockquote</a>
+                        </li>
+                        <li>
+                            <a href="#texto-sobre-escrito">Texto sobrescrito e subscrito</a>
+                        </li>
+                        <li>
+                            <a href="#tags-destaque">Tags strong, em e mark</a>
+                        </li>
+                        <li>
+                            <a href="#tags-extras">Tags font, del e abbr</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#listas"> Lista Ordenada X Lista Não Ordenada </a>
+                    <ol>
+                        <li>
+                            <a href="#lista-ordenada">Lista Ordenada</a>
+                        </li>
+                        <li>
+                            <a href="#lista-nao-ordenada">Lista Não Ordenada</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#tag-form">Tag <code>&lt;Form&gt;</code></a>
+                    <ol>
+                        <li>
+                            <a href="#name">Atributo - name </a>
+                        </li>
+                        <li>
+                            <a href="#action">Atributo - action</a>
+                        </li>
+                        <li>
+                            <a href="#method">Atributo - method</a>
+                        </li>
+                        <li>
+                            <a href="#autocomplete">Atributo - autocomplete</a>
+                        </li>
+                        <li>
+                            <a href="#onsubmit">Atributo - onsubmit</a>
+                        </li>
+                        <li>
+                            <a href="#exemplo-codigo">Exemplo do código</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#tag-table">Tag <code>&lt;Table&gt;</code></a>
+                    <ol>
+                        <li>
+                            <a href="#caption">Tag caption</a>
+                        </li>
+                        <li>
+                            <a href="#th-scope">Tag th + scope</a>
+                        </li>
+                        <li>
+                            <a href="#td-headers">Atributo headers</a>
+                        </li>
+                        <li>
+                            <a href="#tags-semanticas">Tags semântica</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#cores">Cores</a>
+                    <ol>
+                        <li>
+                            <a href="#rgb">RGB</a>
+                        </li>
+                        <li>
+                            <a href="#rgba">RGBA</a>
+                        </li>
+                        <li>
+                            <a href="#hex">HEX</a>
+                        </li>
+                        <li>
+                            <a href="#hsl">HSL</a>
+                        </li>
+                        <li>
+                            <a href="#hsla">HSLA</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#referencias">Links de referências</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section id="apresentando-tags">
+                <article>
+                    <h2>Apresentando Tags Básicas do HTML</h2>
+                    <p>
+                        O HTML (HyperText Markup Language) é a linguagem de marcação, usada para estruturar conteúdos em páginas. 
+                    </p>
+                    <p>
+                        Abaixo estão algumas das tags mais básicas e essenciais para começar.
+                    </p>
+                    <div id="titulos">
+                        <h3>Títulos (h1 a h6)</h3>
+                        <p>
+                            As tags de título do HTML vão de <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code> e servem para organizar o conteúdo da página em partes com diferentes níveis de importância.
+                        </p>
+                        <p>
+                            O <code>&lt;h1&gt;</code> é o título mais importante, normalmente usado para o nome da página ou o assunto principal.
+                            Depois vem o <code>&lt;h2&gt;</code>, que funciona como um subtítulo. Se você quiser dividir esse subtítulo em partes menores, pode usar o <code>&lt;h3&gt;</code>, e assim por diante até o <code>&lt;h6&gt;</code>, que é o nível mais baixo.
+                        </p>
+                        <p>
+                        Resumindo: quanto menor o número, mais importante é o título. Essa hierarquia ajuda tanto os usuários a entenderem a estrutura da página quanto os mecanismos de busca (como o Google) a lerem melhor seu conteúdo.
+                        </p>
+                        <p>
+                            Exemplo de como ultilizalos:
+                        </p>
+                        <blockquote>
+                            <h1 style="font-size: 32px;"><code>&lt;h1&gt;</code>- Título</h1>
+                            <h2><code>&lt;h2&gt;</code>- Título </h2>
+                            <h3><code>&lt;h3&gt;</code>- Título</h3>
+                            <h4><code>&lt;h3&gt;</code>- Título</h4>
+                            <h5><code>&lt;h5&gt;</code>- Título</h5>
+                            <h6><code>&lt;h6&gt;</code>- Título</h6>
+                        </blockquote>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="paragrafos">
+                        <h3>Parágrafos com <code>p</code></h3>
+                        <p>
+                            A tag <code>&lt;p&gt;</code> é usada para criar parágrafos. É uma das mais utilizadas no HTML.
+                        </p>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="citacoes">
+                        <h3>Citações com <code>&lt;blockquote&gt;</code></h3>
+                        <p>
+                            Para destacar uma citação em bloco, utiliza-se <code>&lt;blockquote&gt;</code>:
+                        </p>
+                        <blockquote>
+                            "Oh, não jures pela lua, a lua inconstante,
+                            <br>
+                            &nbsp;Que mensalmente muda em seu círculo,
+                            <br> 
+                            &nbsp;Para que teu amor não se mostre igualmente
+                            <br>
+                            &nbsp;variável" - William Shakespeare em "Romeu e Julieta"
+                        </blockquote>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="texto-sobre-escrito">
+                        <h3>Texto sobrescrito e subscrito</h3>
+                        <p>
+                            Use <code>&lt;sup&gt;</code> para sobrescrito (acima da linha): H<sup>2</sup>O
+                        </p>
+                        <p>
+                            Use <code>&lt;sub&gt;</code> para subscrito (abaixo da linha): CO<sub>2</sub>
+                        </p>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="tags-destaque">
+                        <h3>Tags <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> e <code>&lt;mark&gt;</code></h3>
+                        <p>
+                            Você pode dar ênfase ou destaque ao texto com essas tags:
+                        </p>
+                        <ul>
+                            <li>
+                                <code>&lt;strong&gt;</code> para dar ênfase forte (semântica de importância): <strong>Importante!</strong>
+                            </li>
+                            <li>
+                                <code>&lt;em&gt;</code> para ênfase suave (como itálico): <em>Texto em ênfase</em>
+                            </li>
+                            <li>
+                                <code>&lt;mark&gt;</code> para destacar (como marca-texto): <mark>Destaque amarelo</mark>
+                            </li>
+                        </ul>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="tags-extras">
+                        <h3>Tags <code>&lt;font&gt;</code>, <code>&lt;del&gt;</code> ,<code>&lt;abbr&gt;</code></h3>
+                        <ul>
+                            <li>
+                                <code>&lt;font&gt;</code> (obsoleta) para definir fonte, cor e tamanho do texto: <code>&lt;font color="red"&gt;</code>Texto vermelho<code>&lt;/font&gt;</code>
+                            </li>
+                            <li>
+                                <code>&lt;del&gt;</code> para texto riscado (excluído): <del>Texto excluído</del>
+                            </li>
+                            <li>
+                                <code>&lt;abbr&gt;</code> para abreviações: <abbr title="HyperText Markup Language">HTML</abbr>
+                            </li>
+                        </ul>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section id="listas">
+                <article>
+                    <h2>Lista Ordenada X Lista Não Ordenada </h2>
+                    <p>
+                        Em HTML, as listas servem pra agrupar vários itens juntos, como se fosse uma checklist ou uma sequência. A gente geralmente usa dois tipos: a <strong>Ordenada</strong> e a lista <strong>não ordenada</strong>.
+                        Abaixo entenda as diferença entre elas:
+                    </p>
+                    <div id="lista-ordenada">                   
+                        <h3>🔢 Lista Ordenada (<code>&lt;ol&gt;</code>)</h3>
+                        <p>
+                            A <strong>lista ordenada</strong> usa a tag <code>&lt;ol&gt;</code> que exibe os itens em uma sequência numerada. É ideal quando a ordem dos elementos faz diferença, como em instruções passo a passo, receitas ou etapas de um processo.
+                        </p>
+                        <p>
+                            <strong>Exemplo de preparo de pudim:</strong>
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;ol&gt;
+                                &nbsp;&lt;li&gt;Bata bem os ovos no liquidificador&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Acresente o leite condensado e o leite e bata novamente&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Derreta o açúcar na panela, acrescente água e deixe engrossar&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Coloque em uma forma redonda e despeje a massa do pudim&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Asse em forno médio por 45 minutos&lt;/li&gt;
+                                &lt;/ol&gt;
+                            </code>
+                        </pre>   
+                        <p><strong>Resultado:</strong></p>
+                        <ol>
+                            <li>Bata bem os ovos no liquidificador</li>
+                            <li>Acresente o leite condensado e o leite e bata novamente</li>
+                            <li>Derreta o açúcar na panela, acrescente água e deixe engrossar</li>
+                            <li>Coloque em uma forma redonda e despeje a massa do pudim</li>
+                            <li>Asse em forno médio por 45 minutos</li>
+                        </ol>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="lista-nao-ordenada"> 
+                        <h3>● Lista Não Ordenada (<code>&lt;ul&gt;</code>)</h3>
+                        <p>
+                            A <strong>lista não ordenada</strong> usa a tag <code>&lt;ul&gt;</code> que mostra os itens com marcadores (normalmente bolinhas). Ela é usada quando a ordem dos itens <strong>não</strong> é importante, como em listas de países, tópicos soltos ou características.
+                        </p>
+
+                        <p>
+                            <strong>Exemplo de lista de países:</strong>
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;ul&gt;
+                                &nbsp;&lt;li&gt;Brasil&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Chile&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Italia&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Inglaterra&lt;/li&gt;
+                                &nbsp;&lt;li&gt;Japão&lt;/li&gt;
+                                &lt;/ul&gt;
+                            </code>
+                        </pre>
+                        <p>
+                            <strong>Resultado:</strong>
+                        </p>
+                        <ul>
+                            <li>Brasil</li>
+                            <li>Chile</li>
+                            <li>Italia</li>
+                            <li>Inglaterra</li>
+                            <li>Japão</li>
+                        </ul>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section id="tag-form">
+                <article>
+                    <h2>Tag <code>&lt;Form&gt;</code></h2>
+                    <p>
+                        A tag <code>&lt;form&gt;</code> é usada em HTML para criar formulários, ou seja, áreas onde o usuário pode digitar informações, selecionar opções e enviar dados para um  servidor.
+                    </p>
+                    <p>
+                        Mas o que realmente controla o funcionamento de um formulário são os seus atributos. 
+                        Abaixo conheça alguns dos principais:
+                    </p>
+                    <div id="name">
+                        <h3><code>name</code> - Nome do formulário</h3>
+                        <p>
+                            Esse atributo dá um nome para o formulário. Ele pode ser usado para identificá-lo em scripts ou estilos, principalmente no JavaScript.
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;form name="cadastro"&gt;
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="action">
+                        <h3><code>action</code> - Para onde os dados vão</h3>
+                        <p>
+                            É aqui que você define o <strong>destino</strong> do formulário, ou seja, o link (URL) para onde os dados vão ser enviados quando o usuário clicar no botão de envio.
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;form action="/enviar-dados"&gt;
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="method">
+                        <h3><code>method</code> - Como os dados serão enviados</h3>
+                        <p>
+                            Define o <strong>método HTTP</strong> de envio. Os dois mais usados são:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>GET</strong>: envia os dados na URL, usado em buscas; 
+                            </li>
+                            <li>
+                                <strong>POST</strong>: envia os dados de forma "escondida" no corpo da requisição, usado para dados sensíveis.
+                            </li>
+                        </ul>
+                        <pre>
+                            <code>
+                                &lt;form method="post"&gt;
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <div id="autocomplete">
+                        <h3><code>autocomplete</code> - Completa automaticamente</h3>
+                        <p>
+                          Esse atributo define se o navegador pode ou não sugerir dados que o próprio usuário já preencheu antes, como nome, e-mail ou endereço. Esses dados ficam salvos localmente no navegador.
+                        </p>
+                        <ul>
+                            <li>
+                                <code>on</code>: o navegador vai salvar e sugerir automaticamente
+                            </li>
+                            <li>
+                                <code>off</code>: o navegador não vai sugerir nada
+                            </li>
+                        </ul>
+                        <pre>
+                            <code>
+                                &lt;form autocomplete="off"&gt;
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="onsubmit">
+                        <h3><code>onsubmit</code> - Ação ao enviar</h3>
+                        <p>
+                            Permite rodar uma funçao em JavaScript, antes dos dados serem enviados para o servidor.Essa função é útil para validar dados antes do envio, por exemplo:
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;form onsubmit="return validarFormulario()"&gt;
+                            </code>
+                        </pre>   
+                        <p>
+                            Se a função <code>validarFormulario()</code> retornar <code>false</code>, o envio é cancelado.
+                        </p>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <div id="exemplo-codigo">
+                        <h3>Exemplo do código:</h3>
+                        <pre>
+                            <code>
+                                &lt;form name="contato" action="/enviar" method="post" autocomplete="on" onsubmit="return validar()"&gt;
+                                &nbsp;&lt;input type="text" name="nome" placeholder="Seu nome"&gt;
+                                &nbsp;&lt;input type="email" name="email" placeholder="Seu e-mail"&gt;
+                                &nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section id="tag-table">
+                <article>
+                    <h2>Tag Table</h2>                
+                    <p>
+                        Ao criar tabelas no HTML, é importante usar alguns elementos e atributos que ajudam na <strong>acessibilidade</strong>, facilitando a leitura por leitores de tela e a compreensão da estrutura dos dados.
+                    </p>
+                    <div id="caption">
+                        <h3><code>&lt;caption&gt;</code></h3>
+                        <p>
+                            Serve como um título descritivo da tabela. Fica visível e ajuda usuários (inclusive os que usam leitores de tela) a entenderem o propósito da tabela.
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;caption&gt;Notas dos alunos por disciplina&lt;/caption&gt;
+                            </code>
+                        </pre>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="th-scope">
+                        <h3><code>&lt;th&gt;</code> + <code>scope</code></h3>
+                        <p>
+                            <code>&lt;th&gt;</code> é usado para identificar cabeçalhos de linha ou coluna. O atributo <code>scope</code> define o que aquele cabeçalho representa:
+                        </p>
+                        <ul>
+                            <li><code>scope="col"</code> - Cabeçalho de coluna</li>
+                            <li><code>scope="row"</code> - Cabeçalho de linha</li>
+                        </ul>
+                        <pre>
+                            <code>
+                                &lt;th scope="col"&gt;Aluno&lt;/th&gt;
+                                &lt;th scope="col"&gt;Nota&lt;/th&gt;
+                            </code>
+                        </pre>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr> 
+                    <div id="td-headers">       
+                        <h3><code>headers</code></h3>
+                        <p>
+                            Usado em <code>&lt;td&gt;</code> para indicar a qual <code>&lt;th&gt;</code> ela está relacionada, especialmente útil em tabelas complexas.
+                        </p>
+                        <pre>
+                            <code>
+                                &lt;td headers="col1"&gt;João&lt;/td&gt;
+                            </code>
+                        </pre>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div> 
+                    <hr>
+                    <div id="tags-semanticas">   
+                        <h3><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> e <code>&lt;tfoot&gt;</code></h3>
+                        <p>
+                            Essas tags ajudam a separar visualmente e semanticamente o conteúdo da tabela:
+                        </p>
+                        <ul>
+                            <li><code>&lt;thead&gt;</code> - Parte do cabeçalho</li>
+                            <li><code>&lt;tbody&gt;</code> - Corpo principal da tabela</li>
+                            <li><code>&lt;tfoot&gt;</code> - Rodapé da tabela</li>
+                        </ul>
+                        <pre>
+                            <code>
+                                &lt;thead&gt;
+                                &nbsp;&lt;tr&gt;
+                                &nbsp;&nbsp;&lt;th&gt;Nome&lt;/th&gt;
+                                &nbsp;&nbsp;&lt;th&gt;Idade&lt;/th&gt;
+                                &nbsp;&lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                &lt;tr&gt;
+                                &nbsp;&nbsp;&lt;td&gt;Ana&lt;/td&gt;
+                                &nbsp;&nbsp;&lt;td&gt;20&lt;/td&gt;
+                                &nbsp;&lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <small>
+                        <a href="#inicio">Voltar</a>
+                    </small>
+                </article>
+            </section>
+            <hr>
+            <section id="cores">
+                <article>
+                    <h2>Cores</h2>
+                    <p>
+                        No desenvolvimento web, as cores podem ser definidas de várias formas. Cada formato tem sua maneira de representar cor.
+                    </p>
+                    <div id="rgb">
+                        <h3><code>RGB</code> - Vermelho, Verde e Azul</h3>
+                        <p>
+                            O formato <code>rgb()</code> define uma cor misturando os três canais de luz: vermelho (Red), verde (Green) e azul (Blue). Os valores vão de 0 a 255.
+                        </p>
+                        <pre>
+                            <code>
+                                rgb(255, 0, 0)   → vermelho
+                                rgb(0, 255, 0)   → verde
+                                rgb(0, 0, 255)   → azul
+                            </code>
+                        </pre>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div> 
+                    <hr>
+                    <div id="rgba">       
+                        <h3><code>RGBA</code> - RGB com transparência</h3>
+                        <p>
+                            O <code>rgba()</code> é como o RGB, mas com um canal extra: o <strong>alpha</strong>, que define a opacidade (de 0 a 1).
+                        </p>
+                        <pre>
+                            <code>
+                                rgba(0, 0, 0, 0.5)   → preto com 50% de transparência
+                                rgba(255, 0, 0, 0.3) → vermelho bem transparente
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>    
+                    <hr>
+                    <div id="hex">    
+                        <h3><code>HEX</code> - Representação hexadecimal</h3>
+                        <p>
+                            Esse é um dos formatos mais comuns. A cor é definida por um código com 6 dígitos, representando os canais de vermelho, verde e azul.
+                        </p>
+                        <pre>
+                            <code>#FF0000   → vermelho
+                                #00FF00   → verde
+                                #0000FF   → azul
+                            </code>
+                        </pre>
+                        <p>
+                            Também é possível usar um atalho com 3 dígitos: <code>#f00</code> é igual a <code>#ff0000</code>.
+                        </p>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="hsl">
+                        <h3><code>HSL</code> – Matiz, Saturação e Luminosidade</h3>
+                        <p>
+                            O <code>hsl()</code> representa a cor de uma forma mais visual e intuitiva:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Hue (matiz):</strong> de 0 a 360 (ângulo da cor no círculo cromático)
+                            </li>
+                            <li>
+                                <strong>Saturation:</strong> quão forte é a cor (0% a 100%)
+                            </li>
+                            <li>
+                                <strong>Lightness:</strong> quão clara ou escura (0% a 100%)
+                            </li>
+                        </ul>
+                        <pre>
+                            <code>hsl(0, 100%, 50%)   → vermelho
+                                hsl(120, 100%, 50%) → verde
+                                hsl(240, 100%, 50%) → azul
+                            </code>
+                        </pre>
+                         <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </div>
+                    <hr>
+                    <div id="hsla">
+                        <h3><code>HSLA</code> – HSL com transparência</h3>
+                        <p>
+                            O <code>hsla()</code> é igual ao HSL, mas adiciona o canal alpha (transparência):
+                        </p>
+                        <pre>
+                            <code>
+                                hsla(0, 100%, 50%, 0.5) → vermelho com 50% de opacidade
+                            </code>
+                        </pre>
+                    </div>    
+                    <small>
+                        <a href="#inicio">Voltar</a>
+                    </small>
+                </article>
+            </section>
+            <hr>
+            <section id="referencias">
+                <article>
+                    <h2>Referêcias</h2>
+                    <nav>
+                        <ol>
+                            <li>
+                                <a href="https://www.dio.me/" target="_blank">
+                                    Dio.me
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                                    w3schools
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" >
+                                    MDN Web Docs - HTML
+                                </a>
+                            </li>
+                        </ol>
+                        <small>
+                            <a href="#inicio">Voltar</a>
+                        </small>
+                    </nav>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
