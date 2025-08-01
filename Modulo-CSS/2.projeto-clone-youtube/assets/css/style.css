@@ -1,0 +1,148 @@
+@import url(./resert.css);
+
+body{
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    gap: 1.5625rem;
+    margin-top: 1.5rem;
+}
+p,span{
+    color: #515151;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+
+    margin: 0.3125rem 1.5rem 0;
+    padding: 0.625rem 0;
+    cursor: pointer;
+}
+.button-search{
+    display: flex;
+    align-items: center;
+    width: 25.25rem;
+    height: 2.5rem;
+    padding: 0;
+    border: 0.0625rem solid #ccc;
+}
+.button-search input{
+    width: 22rem;
+    height: 100%;
+    border: none;
+}
+.button-search button{
+    width: 3.5625rem;
+    height: 100%;
+    background-color: #F8F8F8;
+    border: 0.0625rem solid #ccc;
+    cursor: pointer;
+}
+.button-search figure{
+    margin: 0;
+}
+.icones{
+    display: flex;
+    align-items: top;
+    height: 2.125rem;
+}
+.icones figure img{
+    margin-left: 1.5rem;
+    padding: 0.3125rem;
+
+}
+.icones .icones-figure{
+    margin-bottom: 0.3125rem;
+}
+.icones figure img:hover{
+    border-radius: 50%;
+    background-color: #ccc;
+}
+/* estilizando o main */
+main{
+    width: 59.5rem;
+    height: 46.625rem;
+    margin-left: 4.6875rem;
+}
+.content-main h1{
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* Definindo os tamanhos da div que engloba  */
+.container-info{
+    display: flex;
+    width: 56.375rem;
+    height: 2.625rem;
+}
+/* estilizando a parte que mostra o canal */
+.container-info-canal{
+    display: flex;
+    gap: 0.75rem;
+    margin-right: 2.625rem;
+}
+.container-info-canal div{
+    margin-top: 0.3125rem;
+}
+.container-info-canal h3{
+    font-weight: 600;
+}
+/* Estilizando os botões da div container-info */
+.container-info-botoes{
+    display: flex;
+    gap: 0 2.0625rem;
+}
+.container-info-botoes button{
+    width: 9.9375rem;
+    color: #fff;
+    background-color: #CC0000;
+    border: none;
+    border-radius: 0.125rem;
+}
+.container-info-botoes .container-info-items{
+    display: flex;
+    align-items: center;
+    gap: 0 0.3125rem;
+}
+.container-info-botoes .container-info-items span{
+    font-weight: 600;
+    color: #000;
+}
+/* estilizando os textos */
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    margin-top: 1rem;
+}
+.texto-dados{
+    font-weight: 600;
+    color: #000;
+}
+aside{
+    width: 24.25rem;
+    height: 100vh;
+
+}
+.container-thumbnail{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.container-thumbnail div{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+.container-thumbnail h3{
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.container-thumbnail p{
+    font-size: 0.75rem;
+}
