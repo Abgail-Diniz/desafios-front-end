@@ -1,0 +1,91 @@
+@import url(./resert.css);
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #23272A;
+}
+main{
+    display: flex;
+    height: 31.5625rem;
+    padding: 4.34375rem 1.875rem;
+    color: #fff;
+    background-image: url(../images/Header-Background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+    height: 22.875rem;
+}
+.container-main h1{
+    width: 17.375rem;
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgb(0, 30, 60);
+}
+.container-main p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.container-main p, .container-main-button{
+    width: 23rem;
+}
+.container-main-button{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-main-button button{
+    padding: 1.0875rem 0;
+    border-radius: 2.5rem;
+    border: none;  
+}
+.container-main-button button a{
+    text-decoration: none;
+    color: #23272A;
+    font-size: 1rem;
+}
+.container-main-button button ~ button{
+    background-color: #23272A;
+}
+.container-main-button button ~ button a{
+    color: #fff;
+}
+/* Estilizando as sections */
+section{
+    width: 26.75rem;
+    padding: 0 1.5rem 5rem ;
+}
+.first-section{
+    margin-top: 5.6rem;
+}
+.container-section h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 23.125rem;
+    margin: 1.6875rem 0;
+}
+.container-section p{
+    line-height: 1.2;
+}
+.container-section-different{
+    padding-bottom: 2.5rem;
+}
+.container-section p ,
+.container-section-different h2{
+    width: 23.125rem;
+}
+.container-section-different h2{
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1.6875rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.75rem;
+    background-color: #23272A;
+}

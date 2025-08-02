@@ -1,0 +1,72 @@
+@media screen and (min-width: 1024px){
+   main{
+      padding: 0;
+      height: 80vh;
+      background-image: url(../images/Header-Background.png);
+      align-items: center;
+      justify-content: center;
+   }
+   .container-main{
+      align-items: center;
+      justify-content: center;
+      width: 50rem;
+   }
+   .container-main h1{
+      width: 25rem;
+      font-size: 3.5rem;
+   }
+   .container-main p{
+      text-align: center;
+      width: 47.3125rem;
+   }
+   .container-main-button{
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .container-main-button button{
+      width: 18.75rem; 
+   }
+   /* section */
+   section{
+      padding: 0 ;
+      height: 50vh;
+      width: 62.5rem;
+      margin: 0 auto 3.125rem;
+   }
+   .container-section{
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-areas: 
+      "ladoE ladoD" ;
+      justify-items: center;
+      align-items: center;
+   }
+   .container-section h2{
+      font-size: 2.5rem;
+      width: 20.5625rem;
+   }
+   .container-section p{
+      width: 21.75rem;
+   }
+   .second-section picture{
+      grid-area: ladoD;
+   }
+   .container-section-different{
+      padding-bottom: 0;
+      margin: 6.25rem auto 12.5rem;
+      text-align: center;
+   }
+   .container-section-different h2{
+      font-size: 2.5rem;
+      width: 37.5rem;
+      margin: 0 auto 1rem; 
+   }
+   .container-section-different p{
+      width: 50.5rem;
+      margin: 0 auto;
+   }
+   footer{
+      height: 12.5rem;
+   }
+}

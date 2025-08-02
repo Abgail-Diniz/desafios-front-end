@@ -41,6 +41,10 @@ Os desafios estão organizados por pastas, conforme módulos abordado no curso. 
 |    |    |  |      ├── images/
 |    |    |  ├── index.html
 |    |    |  ├── README.md
+|    |    ├── 2.Desafio Landing Page Clone Youtube/
+|    |    |     ...
+|    |    ├── 3.Desafio Landing Page Discord/
+|    |    |     ...       
 |    |    
 |    ├── README.md
 |               
