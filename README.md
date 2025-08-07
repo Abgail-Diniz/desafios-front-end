@@ -45,7 +45,9 @@ Os desafios estão organizados por pastas, conforme módulos abordado no curso. 
 |    |    |     ...
 |    |    ├── 3.Desafio Landing Page Discord/
 |    |    |     ...       
-|    |    
+|    ├──  Módulo - Lógica/
+|    |    ├── 1.Desafio Classificação de Herois/
+|    |    |  ├── index.js 
 |    ├── README.md
 |               
 └──  
