@@ -49,6 +49,10 @@ Os desafios estão organizados por pastas, conforme módulos abordado no curso. 
 |    |    ├── 1.Desafio Classificação de Herois/
 |    |    |  ├── index.js 
 |    ├── README.md
+|    |    ├──  Módulo - JavaScript/
+|    |    |  ├── 1.Desafio Pokédex/
+|    |    |  ├── ...
+|    ├── README.md
 |               
 └──  
 ```
